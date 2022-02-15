@@ -33,7 +33,7 @@
           @click="onMouseClick(item)">
           <span class="text">
             <i :class="item.icon + ' icon '+ options.iconFontClass"></i>
-            <span>{{ item.label }}</span>
+            <span v-html="item.label"/>
             <span v-if="item.children && item.children.length > 0" class="mx-right-arrow" />
           </span>
         </div>
